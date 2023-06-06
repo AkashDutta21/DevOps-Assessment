@@ -28,7 +28,7 @@ def getPipelineID(PROJECT_ID, TOKEN, BASE_URL):
         sheet['B1'] = "BRANCH_NAME"
         
         row = 2
-        # Print the title and description of each merge request
+        # Print the pipeline id and branch name
         for pipeline_request in pipeline_requests:
             sheet[f'A{row}'] = pipeline_request['id']
             sheet[f'B{row}'] = pipeline_request['ref']
